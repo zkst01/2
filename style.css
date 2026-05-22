@@ -1,0 +1,22 @@
+*{margin:0;padding:0;box-sizing:border-box;}
+html,body{width:100%;height:100%;background:#030A14;overflow:hidden;font-family:'Arial','Helvetica',sans-serif;}
+#s{position:relative;width:100%;height:100vh;display:flex;align-items:center;justify-content:center;}
+#bg{position:absolute;inset:0;width:100%;height:100%;}
+.box{position:relative;z-index:10;text-align:center;display:flex;flex-direction:column;align-items:center;gap:15px;}
+.img{width:106px;height:106px;opacity:0;animation:pop .25s steps(2) forwards 1.2s;filter:drop-shadow(0 0 18px rgba(210,30,50,.9)) drop-shadow(0 0 40px rgba(210,30,50,.3));}
+@keyframes pop{from{opacity:0;transform:scale(1.4)}to{opacity:1;transform:scale(1)}}
+.sch{color:#7EC8E3;font-size:11px;letter-spacing:5px;text-transform:uppercase;opacity:0;animation:fu 1s ease forwards 2.8s;text-shadow:0 0 10px rgba(126,200,227,.4);}
+.div{display:flex;align-items:center;gap:10px;opacity:0;animation:fu 1s ease forwards 3.6s;}
+.dl{flex:1;height:1px;max-width:80px;}
+.dl.l{background:linear-gradient(to right,transparent,#D21E32);}
+.dl.r{background:linear-gradient(to left,transparent,#D21E32);}
+.dd{width:5px;height:5px;border-radius:50%;background:#D21E32;box-shadow:0 0 8px #D21E32;}
+.phr{color:#FFF;font-size:25px;font-weight:bold;max-width:490px;line-height:1.35;opacity:0;animation:fu 1.2s ease forwards 4.1s;text-shadow:0 0 18px rgba(210,30,50,.4);}
+.db{display:flex;align-items:center;gap:22px;opacity:0;animation:fu 1s ease forwards 7s;}
+.dn{font-size:74px;font-weight:900;color:#D21E32;line-height:1;text-shadow:0 0 28px rgba(210,30,50,.9),0 0 60px rgba(210,30,50,.3);}
+.dj{font-size:23px;font-weight:700;letter-spacing:5px;color:#7EC8E3;text-transform:uppercase;}
+.vb{width:1px;height:62px;background:linear-gradient(to bottom,transparent,#D21E32,transparent);}
+.sb{color:#7EC8E3;font-size:11px;letter-spacing:3px;text-transform:uppercase;max-width:155px;line-height:1.9;text-align:left;}
+.tg{color:rgba(126,200,227,.5);font-size:9px;letter-spacing:7px;text-transform:uppercase;opacity:0;animation:fi 1s ease forwards 9.5s;}
+@keyframes fu{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+@keyframes fi{from{opacity:0}to{opacity:1}}
